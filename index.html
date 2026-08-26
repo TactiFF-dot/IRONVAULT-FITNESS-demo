@@ -1,50 +1,68 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>IRONVAULT FITNESS</title>
+    <meta name="description"
+          content="IRONVAULT FITNESS — Forge your strongest self. Premium strength, conditioning and personal training.">
+
+    <title>IRONVAULT FITNESS | Forge Your Strongest Self</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- =========================
-         NAVBAR
-    ========================== -->
+    <!-- LOADER -->
+    <div class="loader" id="loader">
+        <div class="loader-logo">IRON<span>VAULT</span></div>
+        <div class="loader-line"></div>
+    </div>
 
-    <header class="navbar">
 
-        <div class="logo">
+    <!-- NAVBAR -->
+    <header class="navbar" id="navbar">
+
+        <a href="#home" class="logo">
             IRON<span>VAULT</span>
-        </div>
+        </a>
 
-        <nav>
+        <nav class="nav-links" id="navLinks">
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#programs">Programs</a>
             <a href="#membership">Membership</a>
+            <a href="#trainers">Trainers</a>
             <a href="#contact">Contact</a>
         </nav>
 
-        <button class="nav-btn">JOIN NOW</button>
+        <a href="#membership" class="nav-cta">
+            JOIN NOW
+        </a>
+
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Open navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
     </header>
 
 
     <main>
 
-        <!-- =========================
-             HERO
-        ========================== -->
-
+        <!-- HERO -->
         <section class="hero" id="home">
 
-            <div class="hero-content">
+            <div class="hero-bg"></div>
+            <div class="hero-grid"></div>
 
-                <p class="hero-tag">
+            <div class="hero-content reveal">
+
+                <p class="eyebrow">
                     NO EXCUSES. JUST RESULTS.
                 </p>
 
@@ -54,28 +72,101 @@
                     SELF.
                 </h1>
 
-                <p class="hero-description">
+                <p class="hero-text">
                     Train harder. Get stronger. Become unstoppable.
-                    Welcome to IRONVAULT FITNESS — where discipline
-                    becomes strength.
+                    Build discipline, confidence and the body you've
+                    always wanted.
                 </p>
 
-                <div class="hero-buttons">
+                <div class="hero-actions">
 
-                    <a href="#membership" class="btn primary">
-                        JOIN NOW
+                    <a href="#membership" class="btn btn-primary">
+                        START TRAINING
+                        <span>→</span>
                     </a>
 
-                    <a href="#membership" class="btn secondary">
-                        VIEW MEMBERSHIPS
+                    <a href="#programs" class="btn btn-outline">
+                        EXPLORE PROGRAMS
                     </a>
 
+                </div>
+
+                <div class="hero-mini-stats">
+                    <div>
+                        <strong>2K+</strong>
+                        <small>MEMBERS</small>
+                    </div>
+
+                    <div>
+                        <strong>30+</strong>
+                        <small>PROGRAMS</small>
+                    </div>
+
+                    <div>
+                        <strong>24/7</strong>
+                        <small>ACCESS</small>
+                    </div>
                 </div>
 
             </div>
 
 
+            <div class="hero-side reveal">
+                <div class="vertical-text">
+                    DISCIPLINE • STRENGTH • RESULTS
+                </div>
+            </div>
+
+
             <div class="hero-badge">
+                <div class="badge-ring">
+                    <span>24/7</span>
+                    <small>ACCESS</small>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <span></span>
+                SCROLL TO EXPLORE
+            </div>
+
+        </section>
+
+
+        <!-- MARQUEE -->
+        <section class="marquee">
+            <div>
+                <span>TRAIN HARDER</span>
+                <b>✦</b>
+                <span>STAY DISCIPLINED</span>
+                <b>✦</b>
+                <span>GET STRONGER</span>
+                <b>✦</b>
+                <span>NO EXCUSES</span>
+                <b>✦</b>
+            </div>
+        </section>
+
+
+        <!-- STATS -->
+        <section class="stats section-dark">
+
+            <div class="stat reveal">
+                <strong data-target="5">0</strong>
+                <span>YEARS EXPERIENCE</span>
+            </div>
+
+            <div class="stat reveal">
+                <strong data-target="2000" data-suffix="+">0</strong>
+                <span>ACTIVE MEMBERS</span>
+            </div>
+
+            <div class="stat reveal">
+                <strong data-target="30" data-suffix="+">0</strong>
+                <span>TRAINING PROGRAMS</span>
+            </div>
+
+            <div class="stat reveal">
                 <strong>24/7</strong>
                 <span>GYM ACCESS</span>
             </div>
@@ -83,181 +174,416 @@
         </section>
 
 
-        <!-- =========================
-             ABOUT
-        ========================== -->
+        <!-- ABOUT -->
+        <section class="about section" id="about">
 
-        <section class="about" id="about">
+            <div class="section-heading reveal">
+                <p class="eyebrow">WHO WE ARE</p>
 
-            <div class="section-label">
-                WHO WE ARE
+                <h2>
+                    BUILT FOR THOSE WHO
+                    <span>REFUSE TO QUIT.</span>
+                </h2>
             </div>
 
-            <h2>
-                BUILT FOR THOSE WHO
-                <span>REFUSE TO QUIT.</span>
-            </h2>
+            <div class="about-layout">
 
-            <p>
-                IRONVAULT FITNESS is more than a gym.
-                It's a place where discipline, strength and consistency
-                come together to build a better version of you.
-            </p>
+                <div class="about-copy reveal">
+
+                    <p class="large-copy">
+                        IRONVAULT FITNESS is more than a gym.
+                        It's a training environment built around
+                        discipline, consistency and measurable results.
+                    </p>
+
+                    <p>
+                        Whether you're stepping into a gym for the first
+                        time or pushing toward your next performance goal,
+                        our programs are designed to help you become
+                        stronger — physically and mentally.
+                    </p>
+
+                    <a href="#programs" class="text-link">
+                        DISCOVER OUR PROGRAMS →
+                    </a>
+
+                </div>
+
+                <div class="about-card reveal">
+
+                    <div class="about-card-number">01</div>
+
+                    <h3>
+                        BUILT ON
+                        <span>DISCIPLINE.</span>
+                    </h3>
+
+                    <p>
+                        Motivation comes and goes.
+                        Discipline keeps you moving.
+                    </p>
+
+                </div>
+
+            </div>
 
         </section>
 
 
-        <!-- =========================
-             PROGRAMS
-        ========================== -->
+        <!-- PROGRAMS -->
+        <section class="programs section" id="programs">
 
-        <section class="programs" id="programs">
+            <div class="section-heading reveal">
 
-            <div class="section-label">
-                WHAT WE DO
+                <p class="eyebrow">WHAT WE DO</p>
+
+                <h2>
+                    TRAIN
+                    <span>HARDER.</span>
+                </h2>
+
+                <p class="heading-description">
+                    Focused programs for every stage of your fitness journey.
+                </p>
+
             </div>
 
-            <h2>
-                TRAIN <span>HARDER.</span>
-            </h2>
 
             <div class="program-grid">
 
-                <div class="program-card">
+                <article class="program-card reveal">
+                    <div class="card-top">
+                        <span>01</span>
+                        <span class="card-arrow">↗</span>
+                    </div>
 
-                    <div class="card-number">01</div>
+                    <div class="program-icon">01</div>
 
                     <h3>STRENGTH</h3>
 
                     <p>
-                        Build raw power and serious strength
-                        with structured training.
+                        Build raw power, improve technique and become
+                        stronger with progressive training.
                     </p>
 
-                </div>
+                    <span class="card-line"></span>
+                </article>
 
 
-                <div class="program-card">
+                <article class="program-card reveal">
+                    <div class="card-top">
+                        <span>02</span>
+                        <span class="card-arrow">↗</span>
+                    </div>
 
-                    <div class="card-number">02</div>
+                    <div class="program-icon">02</div>
 
                     <h3>HYPERTROPHY</h3>
 
                     <p>
-                        Structured workouts designed for
-                        muscle growth and development.
+                        Structured resistance training designed for
+                        sustainable muscle growth.
                     </p>
 
-                </div>
+                    <span class="card-line"></span>
+                </article>
 
 
-                <div class="program-card">
+                <article class="program-card reveal">
+                    <div class="card-top">
+                        <span>03</span>
+                        <span class="card-arrow">↗</span>
+                    </div>
 
-                    <div class="card-number">03</div>
+                    <div class="program-icon">03</div>
+
+                    <h3>FAT LOSS</h3>
+
+                    <p>
+                        Combine smart training and conditioning to
+                        improve body composition.
+                    </p>
+
+                    <span class="card-line"></span>
+                </article>
+
+
+                <article class="program-card reveal">
+                    <div class="card-top">
+                        <span>04</span>
+                        <span class="card-arrow">↗</span>
+                    </div>
+
+                    <div class="program-icon">04</div>
 
                     <h3>CONDITIONING</h3>
 
                     <p>
-                        Improve stamina, endurance and
-                        overall athletic performance.
+                        Develop endurance, stamina and athletic
+                        performance.
                     </p>
 
-                </div>
+                    <span class="card-line"></span>
+                </article>
+
+
+                <article class="program-card reveal">
+                    <div class="card-top">
+                        <span>05</span>
+                        <span class="card-arrow">↗</span>
+                    </div>
+
+                    <div class="program-icon">05</div>
+
+                    <h3>PERSONAL TRAINING</h3>
+
+                    <p>
+                        One-on-one coaching with training built around
+                        your individual goals.
+                    </p>
+
+                    <span class="card-line"></span>
+                </article>
+
+
+                <article class="program-card reveal">
+                    <div class="card-top">
+                        <span>06</span>
+                        <span class="card-arrow">↗</span>
+                    </div>
+
+                    <div class="program-icon">06</div>
+
+                    <h3>FUNCTIONAL</h3>
+
+                    <p>
+                        Move better, perform better and build useful
+                        real-world strength.
+                    </p>
+
+                    <span class="card-line"></span>
+                </article>
 
             </div>
 
         </section>
 
 
-        <!-- =========================
-             MEMBERSHIPS
-        ========================== -->
+        <!-- MEMBERSHIP -->
+        <section class="membership section" id="membership">
 
-        <section class="membership" id="membership">
+            <div class="section-heading reveal">
 
-            <div class="section-label">
-                MEMBERSHIPS
+                <p class="eyebrow">MEMBERSHIPS</p>
+
+                <h2>
+                    CHOOSE YOUR
+                    <span>LEVEL.</span>
+                </h2>
+
             </div>
-
-            <h2>
-                CHOOSE YOUR <span>LEVEL.</span>
-            </h2>
 
 
             <div class="pricing-grid">
 
-                <!-- BASIC -->
+                <article class="price-card reveal">
 
-                <div class="price-card">
-
+                    <p class="plan-label">STARTER</p>
                     <h3>BASIC</h3>
 
                     <div class="price">
                         ₹999
-                        <span>/month</span>
+                        <small>/MONTH</small>
                     </div>
 
                     <ul>
-                        <li>Gym access</li>
-                        <li>Locker access</li>
+                        <li>✓ Gym access</li>
+                        <li>✓ Locker access</li>
+                        <li>✓ Basic equipment access</li>
+                        <li>✓ Member community</li>
                     </ul>
 
-                    <button>
-                        CHOOSE PLAN
+                    <button class="plan-btn">
+                        CHOOSE BASIC
                     </button>
 
-                </div>
+                </article>
 
 
-                <!-- PRO -->
-
-                <div class="price-card featured">
+                <article class="price-card featured reveal">
 
                     <div class="popular">
                         MOST POPULAR
                     </div>
 
+                    <p class="plan-label">PERFORMANCE</p>
                     <h3>PRO</h3>
 
                     <div class="price">
                         ₹1,499
-                        <span>/month</span>
+                        <small>/MONTH</small>
                     </div>
 
                     <ul>
-                        <li>24/7 gym access</li>
-                        <li>Personal workout plan</li>
-                        <li>Locker access</li>
+                        <li>✓ 24/7 gym access</li>
+                        <li>✓ Personal workout plan</li>
+                        <li>✓ Locker access</li>
+                        <li>✓ Progress tracking</li>
+                        <li>✓ Member community</li>
                     </ul>
 
-                    <button>
-                        CHOOSE PLAN
+                    <button class="plan-btn">
+                        CHOOSE PRO
                     </button>
 
-                </div>
+                </article>
 
 
-                <!-- ELITE -->
+                <article class="price-card reveal">
 
-                <div class="price-card">
-
+                    <p class="plan-label">ELITE</p>
                     <h3>ELITE</h3>
 
                     <div class="price">
                         ₹2,499
-                        <span>/month</span>
+                        <small>/MONTH</small>
                     </div>
 
                     <ul>
-                        <li>24/7 gym access</li>
-                        <li>Personal trainer</li>
-                        <li>Nutrition guidance</li>
+                        <li>✓ 24/7 gym access</li>
+                        <li>✓ Personal trainer</li>
+                        <li>✓ Nutrition guidance</li>
+                        <li>✓ Progress tracking</li>
+                        <li>✓ Priority support</li>
                     </ul>
 
-                    <button>
-                        CHOOSE PLAN
+                    <button class="plan-btn">
+                        CHOOSE ELITE
                     </button>
 
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- TRAINERS -->
+        <section class="trainers section" id="trainers">
+
+            <div class="section-heading reveal">
+
+                <p class="eyebrow">THE COACHES</p>
+
+                <h2>
+                    TRAIN WITH
+                    <span>EXPERTS.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="trainer-grid">
+
+                <article class="trainer-card reveal">
+
+                    <div class="trainer-photo photo-one">
+                        <span>COACH</span>
+                    </div>
+
+                    <div class="trainer-info">
+                        <h3>ARJUN SHARMA</h3>
+                        <p>STRENGTH & CONDITIONING</p>
+                        <span>08+ YEARS EXPERIENCE</span>
+                    </div>
+
+                </article>
+
+
+                <article class="trainer-card reveal">
+
+                    <div class="trainer-photo photo-two">
+                        <span>COACH</span>
+                    </div>
+
+                    <div class="trainer-info">
+                        <h3>ROHAN MEHTA</h3>
+                        <p>HYPERTROPHY SPECIALIST</p>
+                        <span>06+ YEARS EXPERIENCE</span>
+                    </div>
+
+                </article>
+
+
+                <article class="trainer-card reveal">
+
+                    <div class="trainer-photo photo-three">
+                        <span>COACH</span>
+                    </div>
+
+                    <div class="trainer-info">
+                        <h3>VIKRAM SINGH</h3>
+                        <p>PERFORMANCE COACH</p>
+                        <span>10+ YEARS EXPERIENCE</span>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- TESTIMONIAL -->
+        <section class="testimonial section-dark">
+
+            <div class="quote-mark reveal">“</div>
+
+            <blockquote class="reveal">
+                I stopped looking for motivation and started
+                building discipline. IRONVAULT changed the way
+                I train and the way I think.
+            </blockquote>
+
+            <div class="testimonial-author reveal">
+                <strong>RAHUL K.</strong>
+                <span>IRONVAULT MEMBER</span>
+            </div>
+
+        </section>
+
+
+        <!-- GALLERY -->
+        <section class="gallery section">
+
+            <div class="section-heading reveal">
+
+                <p class="eyebrow">INSIDE THE VAULT</p>
+
+                <h2>
+                    BUILT TO
+                    <span>PERFORM.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="gallery-grid">
+
+                <div class="gallery-item gallery-one reveal">
+                    <span>01 / TRAIN</span>
+                </div>
+
+                <div class="gallery-item gallery-two reveal">
+                    <span>02 / LIFT</span>
+                </div>
+
+                <div class="gallery-item gallery-three reveal">
+                    <span>03 / PUSH</span>
+                </div>
+
+                <div class="gallery-item gallery-four reveal">
+                    <span>04 / GROW</span>
                 </div>
 
             </div>
@@ -265,17 +591,14 @@
         </section>
 
 
-        <!-- =========================
-             CTA
-        ========================== -->
+        <!-- FINAL CTA -->
+        <section class="final-cta" id="join">
 
-        <section class="cta" id="contact">
+            <div class="cta-content reveal">
 
-            <div>
-
-                <div class="section-label">
+                <p class="eyebrow">
                     YOUR TIME IS NOW
-                </div>
+                </p>
 
                 <h2>
                     READY TO BECOME
@@ -283,13 +606,84 @@
                 </h2>
 
                 <p>
-                    Stop waiting for motivation.
-                    Start building discipline.
+                    Stop waiting for the perfect moment.
+                    Start building your strongest version today.
                 </p>
 
-                <a href="#membership" class="btn primary">
-                    START TRAINING
+                <a href="#membership" class="btn btn-primary">
+                    START YOUR JOURNEY
+                    <span>→</span>
                 </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT -->
+        <section class="contact section" id="contact">
+
+            <div class="section-heading reveal">
+
+                <p class="eyebrow">GET IN TOUCH</p>
+
+                <h2>
+                    COME JOIN THE
+                    <span>VAULT.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="contact-grid">
+
+                <div class="contact-details reveal">
+
+                    <div class="contact-item">
+                        <span>LOCATION</span>
+                        <strong>YOUR CITY, INDIA</strong>
+                    </div>
+
+                    <div class="contact-item">
+                        <span>PHONE</span>
+                        <strong>+91 00000 00000</strong>
+                    </div>
+
+                    <div class="contact-item">
+                        <span>EMAIL</span>
+                        <strong>HELLO@IRONVAULT.COM</strong>
+                    </div>
+
+                    <div class="contact-item">
+                        <span>HOURS</span>
+                        <strong>OPEN 24 HOURS</strong>
+                    </div>
+
+                </div>
+
+
+                <form class="contact-form reveal" id="contactForm">
+
+                    <input type="text"
+                           id="name"
+                           placeholder="YOUR NAME"
+                           required>
+
+                    <input type="email"
+                           id="email"
+                           placeholder="YOUR EMAIL"
+                           required>
+
+                    <textarea id="message"
+                              placeholder="TELL US YOUR GOAL"
+                              rows="5"
+                              required></textarea>
+
+                    <button type="submit" class="btn btn-primary">
+                        SEND MESSAGE →
+                    </button>
+
+                </form>
 
             </div>
 
@@ -298,21 +692,50 @@
     </main>
 
 
-    <!-- =========================
-         FOOTER
-    ========================== -->
-
+    <!-- FOOTER -->
     <footer>
 
-        <div class="logo">
-            IRON<span>VAULT</span>
+        <div class="footer-top">
+
+            <a href="#home" class="logo">
+                IRON<span>VAULT</span>
+            </a>
+
+            <p>
+                FORGE YOUR STRONGEST SELF.
+            </p>
+
         </div>
 
-        <p>
-            © 2026 IRONVAULT FITNESS. ALL RIGHTS RESERVED.
-        </p>
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 IRONVAULT FITNESS
+            </span>
+
+            <div>
+                <a href="#home">HOME</a>
+                <a href="#programs">PROGRAMS</a>
+                <a href="#membership">MEMBERSHIP</a>
+                <a href="#contact">CONTACT</a>
+            </div>
+
+        </div>
 
     </footer>
+
+
+    <!-- TOAST -->
+    <div class="toast" id="toast">
+        <strong>IRONVAULT</strong>
+        <span id="toastMessage">Done.</span>
+    </div>
+
+
+    <!-- BACK TO TOP -->
+    <button class="back-top" id="backTop" aria-label="Back to top">
+        ↑
+    </button>
 
 
     <script src="script.js"></script>
